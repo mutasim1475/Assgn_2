@@ -1,0 +1,61 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">My Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+     
+      <!--Home Page link. If on Home page, make active, otherwise not-->
+        <li class="nav-item">
+        <% if(title == "Home") { %>
+          <a class="nav-link active" href="/home"> 
+        <% } 
+        else { %>
+          <a class="nav-link" href="/home"> 
+        <% } %>
+        <i class="fa-sharp fa-solid fa-house fa-2x"></i> Home</a>
+        </li>
+        
+      <!--About Page link. If on About page, make active, otherwise not-->
+        <li class="nav-item">
+        <% if(title == "About") { %>
+        <a class="nav-link active" href="/about"> 
+       <% } 
+       else { %>
+        <a class="nav-link" href="/about"> 
+        <% } %>
+          <i class="fa-sharp fa-solid fa-question fa-lg"></i> About</a>
+        </li>
+      
+        
+      <!--Contact page link. If on Contact page, make active, otherwise not-->
+        <li class="nav-item">
+        <% if(title == "Contact") { %>
+        <a class="nav-link active" href="/contact"> 
+       <% } 
+       else { %>
+        <a class="nav-link" href="/contact"> 
+        <% } %>
+         <li class="nav-item">
+         <i class="fa-sharp fa-solid fa-address-book"></i> Contact</a>
+        </li>
+
+        
+      <!--Services Page link. If on Services page, make active, otherwise not-->
+        <li class="nav-item">
+        <% if(title == "Services") { %>
+        <a class="nav-link active" href="/services"> 
+       <% } 
+       else { %>
+        <a class="nav-link" href="/services"> 
+        <% } %>
+         <li class="nav-item">
+          <i class="fa-solid fa-bell-concierge"></i> Services</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
