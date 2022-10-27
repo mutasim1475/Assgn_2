@@ -27,10 +27,20 @@
        else { %>
         <a class="nav-link" href="/about"> 
         <% } %>
-          <i class="fa-sharp fa-solid fa-question fa-lg"></i> About</a>
+          <i class="fa-solid fa-user fa-2x"></i> About</a>
         </li>
       
-        
+      <!--Projects Page link. If on Projects page, make active, otherwise not-->
+        <li class="nav-item">
+        <% if(title == "Projects") { %>
+        <a class="nav-link active" href="/projects"> 
+       <% } 
+       else { %>
+        <a class="nav-link" href="/projects"> 
+        <% } %>
+         <li class="nav-item">
+          <i class="fa-solid fa-bars-progress fa-2x"></i> Projects</a>
+        </li>
       <!--Contact page link. If on Contact page, make active, otherwise not-->
         <li class="nav-item">
         <% if(title == "Contact") { %>
@@ -40,20 +50,7 @@
         <a class="nav-link" href="/contact"> 
         <% } %>
          <li class="nav-item">
-         <i class="fa-sharp fa-solid fa-address-book"></i> Contact</a>
-        </li>
-
-        
-      <!--Services Page link. If on Services page, make active, otherwise not-->
-        <li class="nav-item">
-        <% if(title == "Services") { %>
-        <a class="nav-link active" href="/services"> 
-       <% } 
-       else { %>
-        <a class="nav-link" href="/services"> 
-        <% } %>
-         <li class="nav-item">
-          <i class="fa-solid fa-bell-concierge"></i> Services</a>
+         <i class="fa-sharp fa-solid fa-address-book fa-2x"></i> Contact</a>
         </li>
       </ul>
     </div>

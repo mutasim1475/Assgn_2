@@ -1,0 +1,19 @@
+<%- include ("./partials/header") %> 
+<%- include ("./partials/main_nav") %>
+
+        <div class="Contact">
+            <h1>Contact</h1>
+            <div class="form-box">
+
+                <form action=mailto:rahmanmuta@gmail.com ?subject=Signup Form method="post" enctype="text/plain" name="form" >
+                        <input type="text" id="name" name="name" placeholder="Name " required=""><br>
+                        <input type="email" id="email" name="email" placeholder="Email " required=""> <br>
+                        <!--The pattern forces the user to follow the pattern, otherwise they will not be able to submit the form. See link 2-->
+                        <input type="tel" id="number" name="phonenumber" placeholder="123-456-7890"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                        <textarea name="message" cols="60" rows="6" placeholder="Feedback" required="" data-gramm="false" wt-ignore-input="true"></textarea>
+                        <input type="submit" value="Submit"> 
+                </form>
+            </div>
+        </div> 
+<%- include ("./partials/bottom_nav") %> 
+<%- include ("./partials/footer") %> 

@@ -1,8 +1,420 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+body{
+  background-color: #242424;    
+  margin: 0;
+  color: rgb(230, 27, 27);
 }
 
-a {
-  color: #00B7FF;
+a{
+  color: white; 
+}
+
+a:hover{
+  cursor: pointer;
+  color: #00ef14;
+}
+nav {
+  background: linear-gradient(to bottom, black, #555555);
+  /*Flex Box, see link 3*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  filter: drop-shadow(0 0 15px rgb(0, 190, 0));
+}
+
+nav div {
+  width: 80px;
+  height: 80px;
+}
+
+nav img {
+  margin-top: 3%;
+  width: auto;
+  height: 95%;
+  border-radius: 50%;
+}
+
+nav ul {
+  /*Removes bullet points from links, see link 4*/
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /*Flex Box, see link 3*/
+  display: flex;
+  gap: 10px;
+  flex: 1;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+nav a {
+  /*Removes underline from links, see link 5*/
+  text-decoration: none;
+  padding: 10px 20px;
+  color: rgb(159, 153, 153);
+  transition: background-color 0.9s ease;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+}
+
+
+/*HOME PAGE*/
+.Home {
+ margin-top: 20%;
+ margin-bottom: 10%;
+ margin-left: relative;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+}
+
+.Home a{
+  /*Removes underline from links, see link 5*/
+  text-decoration: none;
+}
+
+.Home h2{
+  font-size: larger;
+}
+
+/*ABOUT PAGE*/
+.About {
+  margin-top: 0%;
+  margin-bottom: 7%;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.About article {
+  padding: 0% 30%;
+}
+
+.container{
+  margin-top: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+  position: relative;
+  /*Flex Box, see link 3*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+video { 
+  height: 290px;
+  width: 40%;
+  border:2px rgb(0, 190, 0) solid; 
+  box-shadow: 20px 25px 20px black; 
+  /*Tells a video or an image how ti should be rezised to fit in its container*/
+  object-fit: cover;
+}
+
+#PC_1{
+  height: 290px;
+  width: 25%;
+  /*Tells a video or an image how ti should be rezised to fit in its container*/
+  object-fit: cover;
+}
+#PC_2{
+  height: 290px;
+  width: 25%;
+  /*Tells a video or an image how ti should be rezised to fit in its container*/
+  object-fit: cover;
+}
+
+.About h1{
+  margin-top: 10%;
+}
+
+
+/*Projects PAGE*/
+.Projects{
+  display: flex;
+  flex-direction: column;
+}
+
+.paragraphs{
+  padding-left: 200px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+.Projects h3{
+  margin-left: 7%;
+  margin-top: 10%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+}
+
+
+/*CONTACT PAGE*/
+.Contact{
+  /*Flex Box, see link 3*/
+  display: flex !important;
+  align-items: center !important;
+  flex-direction: column !important;
+  margin-top: 80px !important;
+}
+
+.Contact h1{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+.form-box{
+  width: 40% !important;
+  background: linear-gradient(black 45%, #00ef14 200% );
+  border: 2px solid rgb(62, 235, 4);
+  padding-top: 4% !important;
+  padding-bottom: 3% !important;
+  margin-bottom: 10%;
+  /*Follwing lines of code helps determine the position of elements, see link 7*/
+}
+
+/*Specifies input type, see link 8*/
+input[type=text],[type=email],[type=tel],select, textarea {
+  border: 2px solid rgb(0, 155, 0);
+  display: block !important;
+  width: 55% !important;
+  box-sizing: border-box !important;
+  margin: auto !important;
+  background-color: #242424;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Specifies input type, see link 8*/
+input[type=message], select{
+  display: block;
+  width: 85%;
+  height: 100%;
+  padding: 12px 20px;
+  border-radius: 800px;
+  box-sizing: border-box;
+  margin:auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type=submit],select{
+  background-color: rgb(51, 47, 47);
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10%;
+  width: 30%; 
+}
+
+input[type=submit]:hover{
+  background-color: green;
+  background: linear-gradient(45deg, green, black 80%);
+  /*Changes the cursor into a pointer, see link 9*/
+  cursor: pointer;
+}
+
+textarea{
+  resize: none;
+  font-family: 'Raleway', sans-serif;
+  color: #ffffff;
+}
+
+input {
+  width: 100px;
+  line-height: 25px;
+  margin-right: auto;      
+  margin-left:auto;
+  margin-top: 5%;
+  display: block;
+  color:rgb(244, 236, 236);    
+}
+
+/*FOOTER*/
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0 10px;
+}
+
+
+/*If the screen is less than 960px, do this. Equivalent of having a sperate css sheet for tablet. See link 1*/
+/*MEDIA QUERIES FOR TABLET */
+@media only screen and (max-width: 960px){     
+  nav ul {
+      gap: 50px;
+      height: 100%;
+  }
+                   
+  nav a {
+      padding: 10px 5px;      
+  }
+
+  /*HOME PAGE*/
+  .Home {
+      margin-top: 30%;
+      margin-bottom: 10%;
+      margin-left: relative;
+      text-align: center;
+   }
+
+  
+   /*ABOUT PAGE*/
+
+  .container{
+      /*Instead of arranging elements in a row by defaults, arrange them in a column, see link 3*/
+      flex-direction: column;
+      position: relative;
+      /*Flex Box, see link 3*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+  }
+  
+  video { 
+      height: 400px;
+      width: 100%;
+      border:2px rgb(0, 190, 0) solid; 
+      box-shadow: 20px 25px 20px black; 
+      /*Tells a video or an image how ti should be rezised to fit in its container*/
+      object-fit: cover;
+  }
+  
+  #PC_1{
+      height: 600px;
+      width: 100%;
+      padding-bottom: 6%;
+  }
+  #PC_2{
+      height: 600px;
+      width: 100%;
+      padding-top: 10%;
+  }    
+  .About article{
+     margin-top: 1%;
+     padding: 10% 5% 20%;
+     text-align: center;
+  }
+
+  /*Projects PAGE*/
+  .paragraphs{
+      padding-left: 0px
+  }
+
+  /*CONTACT PAGE*/
+  .form-box{
+      width: 50%;
+      height: 55%;   
+  }
+  /*Specifies input type, see link 8*/
+  input[type=text],[type=email],[type=tel],select, textarea {
+      margin-top: 1.5%;
+      width: 75%;
+      height: 30%;
+  }
+  
+  input[type=submit],select{
+      margin-top:18%;
+      width: 30%;
+  }
+}  
+
+
+
+
+
+
+
+
+/*If the screen is less than 500px. do this. Equivalent of having a sperate css sheet for phone. See link 1*/
+/*MEDIA QUERIES FOR PHONE*/
+@media only screen and (max-width: 500px){     
+  nav ul {
+      gap: 0px;
+      height: 100%;
+      /*Flex Box, see link 3*/
+      flex: 1;
+      justify-content: space-between;
+  }
+  
+  nav a {
+      padding: 10px 5px;      
+  }
+
+  nav{
+      /*Flex Box, see link 3*/
+      padding: 4px;
+      gap: 20px;
+  }
+
+  /*HOME PAGE*/
+  .Home {
+      margin-top: 70%;
+      margin-bottom: 50%;
+      margin-left: relative;
+      text-align: center;
+   }
+         
+   /*ABOUT PAGE*/
+  .container{
+      flex-direction: column;
+      position: relative;
+      /*Flex Box, see link 3*/
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+  }
+  
+  video { 
+      height: 250px;
+      width: 100%;
+      border:2px rgb(0, 190, 0) solid; 
+      box-shadow: 20px 25px 20px black; 
+      /*Tells a video or an image how ti should be rezised to fit in its container*/
+      object-fit: cover;
+  }
+  
+  #PC_1{
+      height: 400px;
+      width: 100%;
+      /*Tells a video or an image how ti should be rezised to fit in its container*/
+      object-fit: cover;
+      padding-bottom: 6%;
+  }
+  #PC_2{
+      height: 400px;
+      width: 100%;
+      /*Tells a video or an image how it should be rezised to fit in its container*/
+      object-fit: cover;
+      padding-top: 10%;
+  }    
+  .About article{
+     margin-top: 1%;
+     padding: 10% 5% 20%;
+     text-align: center;
+  }
+
+  /*Projects PAGE*/
+  .paragraphs{
+      padding-left: 30%;
+  }
+ 
+  /*CONTACT PAGE*/
+  .form-box{ 
+      width: 70%;
+      height: 45%;   
+  }
+  
+  /*Specifies input type, see link 8*/
+  input[type=text],[type=email],[type=tel],select, textarea {
+      margin-top: 1.5%;
+      width: 75%;
+      height: 30%;
+      display: flex;
+      justify-content: center;
+  }    
+  
+  input[type=submit],select{
+      margin-top: 10%;
+  }
 }
