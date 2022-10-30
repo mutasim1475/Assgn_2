@@ -1,12 +1,12 @@
 
 body{
-  background-color: #242424;    
+  background-color: #242424 !important;    
   margin: 0;
   color: rgb(230, 27, 27);
 }
 
 a{
-  color: white; 
+  color: rgb(0, 0, 0); 
 }
 
 a:hover{
@@ -16,9 +16,7 @@ a:hover{
 nav {
   background: linear-gradient(to bottom, black, #555555);
   /*Flex Box, see link 3*/
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   padding: 10px 30px;
   filter: drop-shadow(0 0 15px rgb(0, 190, 0));
 }
@@ -40,12 +38,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  /*Flex Box, see link 3*/
-  display: flex;
-  gap: 10px;
-  flex: 1;
-  justify-content: flex-end;
-  height: 100%;
+  
 }
 
 nav a {
@@ -239,7 +232,7 @@ footer {
 /*If the screen is less than 960px, do this. Equivalent of having a sperate css sheet for tablet. See link 1*/
 /*MEDIA QUERIES FOR TABLET */
 @media only screen and (max-width: 960px){     
-  nav ul {
+/*nav ul {
       gap: 50px;
       height: 100%;
   }
@@ -247,7 +240,7 @@ footer {
   nav a {
       padding: 10px 5px;      
   }
-
+*/
   /*HOME PAGE*/
   .Home {
       margin-top: 30%;
@@ -328,7 +321,7 @@ footer {
 /*If the screen is less than 500px. do this. Equivalent of having a sperate css sheet for phone. See link 1*/
 /*MEDIA QUERIES FOR PHONE*/
 @media only screen and (max-width: 500px){     
-  nav ul {
+ nav ul {
       gap: 0px;
       height: 100%;
       /*Flex Box, see link 3*/
@@ -339,7 +332,7 @@ footer {
   nav a {
       padding: 10px 5px;      
   }
-
+*/
   nav{
       /*Flex Box, see link 3*/
       padding: 4px;
